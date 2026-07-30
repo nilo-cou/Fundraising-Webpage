@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assam Flood Relief | Admin Dashboard</title>
+  <title>Assam Flood Relief | Admin Dashboard | Earlyindia</title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\ndeka\Downloads\Early India News Portal Logo (2).png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -14,14 +15,14 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
   <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <div class="flex items-center gap-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3 flex-wrap">
         <div class="bg-blue-600 text-white p-2 rounded-lg">
           <i data-lucide="waves" class="w-5 h-5"></i>
         </div>
-        <div>
-          <h1 class="font-semibold text-slate-900 leading-none">Assam Flood Relief</h1>
-          <span class="text-xs text-slate-500 font-medium">Admin Dashboard</span>
+        <div class="min-w-0">
+          <h1 class="font-semibold text-slate-900 leading-none truncate">Assam Flood Relief</h1>
+          <span class="text-xs text-slate-500 font-medium truncate block">Admin Dashboard</span>
         </div>
       </div>
       <div class="flex items-center gap-3">
@@ -38,7 +39,7 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-8">
     <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
       <h2 class="text-lg font-semibold text-slate-900">Current Relief Status</h2>
-      <p class="text-sm text-slate-600 mt-1">All amounts are currently set to zero. Admin can update them from the edit panel.</p>
+      <p class="text-sm text-slate-600 mt-1">Dashboard Will be Updated Once Payment is Received.</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -171,7 +172,7 @@
           <input id="admin-qr-file" type="file" accept="image/*" class="w-full border rounded px-3 py-2" />
         </label>
         <label class="space-y-1">
-          <span class="text-slate-600">Account Holder</span>
+          <span class="text-slate-600">Name Of Donor</span>
           <input id="admin-holder" type="text" class="w-full border rounded px-3 py-2" value="YOUR NAME HERE" />
         </label>
         <label class="space-y-1">
@@ -186,11 +187,10 @@
           <span class="text-slate-600">Bank Name</span>
           <input id="admin-bank" type="text" class="w-full border rounded px-3 py-2" value="YOUR BANK NAME" />
         </label>
-      </div>
-
-      <div class="flex gap-2">
-        <button id="save-admin" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Save Changes</button>
-        <button id="reset-admin" class="bg-slate-200 px-4 py-2 rounded-lg">Reset to Zero</button>
+        <div class="flex gap-2 md:col-span-2">
+          <button id="save-admin" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Save Changes</button>
+          <button id="reset-admin" class="bg-slate-200 px-4 py-2 rounded-lg">Reset to Zero</button>
+        </div>
       </div>
     </div>
   </div>
@@ -464,3 +464,4 @@
   </script>
 </body>
 </html>
+
